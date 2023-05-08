@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Playlist Converter</title>
+</head>
+<body>
+    <h1>Playlist Converter</h1>
+    <form action="/convert" method="POST">
+        <label for="playlist_url">Playlist URL:</label><br>
+        <input type="text" id="playlist_url" name="playlist_url" required><br><br>
+        
+        <label for="target_service">Target Service:</label><br>
+        <select id="target_service" name="target_service" required>
+            <option value="service1">Service 1</option>
+            <option value="service2">Service 2</option>
+            <!-- Add more options for other services -->
+        </select><br><br>
+        
+        <input type="submit" value="Convert">
+    </form>
+</body>
+</html>
